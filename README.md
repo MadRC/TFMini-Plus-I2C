@@ -1,3 +1,47 @@
+# Mads RC Edit of TFMini-Plus-I2C by  budryerson
+
+Based on budryerson original code I have made some changes and new sketches to change the com mode from UART to I2C and back via Arduino UNO.
+
+The main purpose of this was to easly allow changing of mode for use in Ardupilot and PX4 
+
+These files have been tested on Arduino UNO and do as follows. 
+
+**Serial Raad
+
+Simply reads the TFMini Plus when in serial mode, no changes made. this uses pins 0 and 1 as per the Uno serial ports. 
+
+**SET I2C
+
+This will change the communicationd mode from UART to I2C on the default address of 16
+
+**I2C Read
+
+This is allow you to change the I2C address then read the I2c output, this is configured for Pins A4 (SDA), A5 (SCL) as per wire.h. 
+
+**SET Serial 
+
+This sets the port mode back from I2C to serial. 
+
+
+**How To Use 
+
+***To change from UART to I2C
+
+Verify and upload serial read sketch to arduino, reboot.  
+Connect via correct ports for communication type (for serial to I2C connect on pins 0 & 1)
+Power on and open serial concole from tools menue and verift connection by seeing data from sensor 
+Verify and upload SET I2C sketch to arduino, reboot.  
+Power on and open serial concole from tools menue and you should see it complet to switch 
+
+
+These codes where quicly made and tbh are not a tidy modifacaion but work. 
+
+
+
+**Origonal TFMini-Plus-I2C by budryerson info below. 
+
+
+
 :slightly_frowning_face:**Version 0.2.2 is the newest version of this library.** The Arduino IDE Library Manager incorrectly lists 0.4.0 as the newest version. DO NOT INSTALL VERSION 0.4.0.
 
 <hr>
