@@ -6,7 +6,7 @@ The main purpose of this was to easly allow changing of mode for use in Ardupilo
 
 These files have been tested on Arduino UNO and do as follows. 
 
-**Serial Raad
+**Serial Read
 
 Simply reads the TFMini Plus when in serial mode, no changes made. this uses pins 0 and 1 as per the Uno serial ports. 
 
