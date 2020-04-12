@@ -6,26 +6,26 @@ The main purpose of this was to easly allow changing of mode for use in Ardupilo
 
 These files have been tested on Arduino UNO and do as follows. 
 
-**Serial Read
+## Serial Read
 
 Simply reads the TFMini Plus when in serial mode, no changes made. this uses pins 0 and 1 as per the Uno serial ports. 
 
-**SET I2C
+## SET I2C
 
 This will change the communicationd mode from UART to I2C on the default address of 16
 
-**I2C Read
+## I2C Read
 
 This is allow you to change the I2C address then read the I2c output, this is configured for Pins A4 (SDA), A5 (SCL) as per wire.h. 
 
-**SET Serial 
+## SET Serial 
 
 This sets the port mode back from I2C to serial. 
 
 
-**How To Use 
+## How To Use 
 
-***To change from UART to I2C
+### To change from UART to I2C
 
 Verify and upload serial read sketch to arduino, reboot.  
 Connect via correct ports for communication type (for serial to I2C connect on pins 0 & 1)
@@ -38,7 +38,7 @@ These codes where quicly made and tbh are not a tidy modifacaion but work.
 
 
 
-**Origonal TFMini-Plus-I2C by budryerson info below. 
+## Origonal TFMini-Plus-I2C by budryerson info below. 
 
 
 
