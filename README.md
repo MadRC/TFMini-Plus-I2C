@@ -25,6 +25,8 @@ This sets the port mode back from I2C to serial.
 
 ## How To Use 
 
+You Will need to install the TFMPLUS and TFMPI2C Librarys for use these files, these can be found in the libary manager or they are also included here too. 
+
 ### To change from UART to I2C
 
 Verify and upload serial read sketch to arduino, reboot.  
