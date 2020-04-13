@@ -22,7 +22,7 @@ void setup()
     // Send some example commands to the TFMini-Plus
     // - - - - - - - - - - - - - - - - - - - - - - - -
     printf( "Serial Set: ");
-    if( tfmP.sendCommand( SET_UART_MODE, 0))
+    if( tfmP.sendCommand( SET_UART_MODE, 0)) /// sets serial mode to UART, all code after this does not run if sucsesfull. 
     {
         printf( "passed.\r\n");
     }
