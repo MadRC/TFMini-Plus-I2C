@@ -2,13 +2,13 @@
 
 Based on budryerson original code I have made some changes and new sketches to change the com mode from UART to I2C and back via Arduino UNO.
 
-The main purpose of this was to easly allow changing of mode for use in Ardupilot and PX4 
+The main purpose of this was to easily allow changing mode for use in Ardupilot and PX4 with out having to understand the code. 
 
-These files have been tested on Arduino UNO and do as follows. 
+These files have been tested on Arduino UNO and do as follows.
 
 ## Serial Read
 
-Simply reads the TFMini Plus when in serial mode, no changes made. this uses pins 0 and 1 as per the Uno serial ports. 
+Simply reads the TFMini Plus when in serial mode, no changes made. this uses pins 0 and 1 as per the Uno serial ports.
 
 ## SET I2C
 
@@ -16,27 +16,24 @@ This will change the communicationd mode from UART to I2C on the default address
 
 ## I2C Read
 
-This is allow you to change the I2C address then read the I2c output, this is configured for Pins A4 (SDA), A5 (SCL) as per wire.h. 
+This is allow you to change the I2C address then read the I2c output, this is configured for Pins A4 (SDA), A5 (SCL) as per wire.h.
 
-## SET Serial 
+## SET Serial
 
-This sets the port mode back from I2C to serial. 
+This sets the port mode back from I2C to serial.
 
+## How To Use
 
-## How To Use 
-
-You Will need to install the TFMPLUS and TFMPI2C Librarys for use these files, these can be found in the libary manager or they are also included here too. 
+You Will need to install the TFMPLUS and TFMPI2C Librarys for use these files, these can be found in the libary manager or they are also included here too.
 
 ### To change from UART to I2C
 
-Verify and upload serial read sketch to arduino, reboot.  
-Connect via correct ports for communication type (for serial to I2C connect on pins 0 & 1)
-Power on and open serial concole from tools menue and verift connection by seeing data from sensor 
-Verify and upload SET I2C sketch to arduino, reboot.  
-Power on and open serial concole from tools menue and you should see it complet to switch 
+Verify and upload serial read sketch to arduino, reboot.
+Connect via correct ports for communication type (for serial to I2C connect on pins 0 & 1) Power on and open serial console from tools menu and verify connection by seeing data from sensor.
+Verify and upload SET I2C sketch to Arduino, reboot.
+Power on and open serial console from tools menue and you should see it complet to switch
 
-
-These codes where quicly made and tbh are not a tidy modifacaion but work. 
+These codes where quickly made and tbh are not a tidy modifications but work, I will tidy in time. 
 
 
 
